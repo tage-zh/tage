@@ -51,9 +51,10 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<configuration>
-					<imageName>tigerimage</imageName>
-					<baseImage>java</baseImage>
-					<entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
+					<imageName>tigerimagebyfile</imageName>
+					<!--<baseImage>java</baseImage>-->
+					<!--<entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>-->
+					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
