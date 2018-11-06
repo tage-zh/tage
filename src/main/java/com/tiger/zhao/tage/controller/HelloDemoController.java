@@ -11,7 +11,7 @@ public class HelloDemoController {
     @RequestMapping("/hello")
     public Map sayHello(){
         Map result = new HashMap<>();
-        result.put("name","tiger");
+        result.put("name","tiger docker file");
         return result;
     }
 }
